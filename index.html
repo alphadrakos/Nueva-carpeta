@@ -8,14 +8,7 @@
   </head>
   <body>
     <!-- div contenedor -->
-    <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint in,
-        accusamus a libero repellat deleniti facilis exercitationem officiis
-        repudiandae! Esse accusantium atque doloribus cumque velit harum, natus
-        laboriosam obcaecati quibusdam!
-      </p>
-    </div>
+    <div class="container"></div>
     <script>
       /*const contarCaracteres = (cadena ="") => (!cadena)?
       console.warn ("No ingresaste ninguna cadena") :
@@ -62,13 +55,35 @@
       a %= 3;
       console.log(a);*/
       //concatenar
-      let nombre = "Adrian";
-      let apellido = "Vazquez";
-      let saludo = "hola mi nombre es " + nombre + " " + apellido + ".";
-      console.log(saludo);
+      /*let nombre = "Adrian";
+      let apellido = "Vazquez";*/
+      /*let saludo = "hola mi nombre es " + nombre + " " + apellido + ".";
+      console.log(saludo);*/
       //interpolacion
-      let saludo2 = `hola mi nombre es ${nombre} ${apellido}.`;
-      console.log(saludo2);
+      /*let saludo2 = `hola mi nombre es ${nombre} ${apellido}.`;
+      console.log(saludo2);*/
+
+      /*function estoEsUnaFuncion() {
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+      }*/
+      //invocación de funcion
+      //estoEsUnaFuncion();
+
+      /*function unaFuncionQueDevuelveValor() {
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+        return "La funcion a retornado una cadena de texto";
+      }*/
+      //solo se ve uno,dos,tres,
+      /*let valorDeFuncion = unaFuncionQueDevuelveValor();*/
+      /* Para que retorne la cadena de texto hay que usar console*/
+      //console.log(valorDeFuncion);
+      function saludar(nombre = "Desconocido", edad = 0) {
+        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+      }
     </script>
   </body>
 </html>

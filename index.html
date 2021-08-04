@@ -223,6 +223,15 @@
       console.log(7 === 7);
       console.log("7" === 7);
       console.log(0 === false);*/
+      /*let tex1 = "hola";
+      let tex2 = "hola";
+      let tex3 = "adios";
+
+      console.log(tex1 == tex3);
+      console.log(tex1 != tex2);*/
+
+      /*Cuando se utilizan cadenas de texto los operadores "mayor que" (>) y "menor que" (<)siguen un razonamiento no intuitivo se compara letra a letra comenzando desde la izquierda hasta que se encuentre una diferencia entre las dos cadenas de texto. Para determinar si una letra es mayor o menor que otra, las mayúsculas se consideran menores que las minúsculas y las primeras letras del alfabeto son menores que las ultimas (a es menor que b, b es menor que c, A es menor que a, etc).*/
+      //console.log(tex3 >= tex2);
 
       //incremento y decremento
       //let i = 1;
@@ -253,9 +262,16 @@
 
       //if  else
 
-      let edad = 17;
+      /*let mostrado = false;
+      let usuarioPermiteMensajes = true;*/
+      /* al usar ! niega su valor por lo tanto ambos valores son true
+      if (!mostrado && usuarioPermiteMensajes) {
+        console.log("Es la primera vez que se muestra el mensaje");
+      }*/
+
+      /*let edad = 17;
       if (edad > 17) {
-        console.log("Eres mayor deedad");
+        console.log("Eres mayor de edad");
       } else {
         console.log("Eres menor de edad");
       }
@@ -273,7 +289,27 @@
         console.log("Eres mayor de edad");
       } else {
         console.log("Eres menor de edad");
+      }*/
+
+      //ejercicios
+
+      let num1 = 5;
+      let num2 = 8;
+
+      if (num1 < num2) {
+        console.log("num1 no es mayor que num2");
       }
+      if (num2 > 0) {
+        console.log("num2 es positivo");
+      }
+      if (!num1 <= 0) {
+        console.log("num1 es negativo o distinto de cero");
+      }
+      /*if (!+num1 >= num2) {
+        console.log(
+          "incrementar en 1 unidad el valor de num1 no lo hace mayor mayor o igual que num2"
+        );
+      }*/
 
       /*const contarCaracteres = (cadena = "") =>
         !cadena

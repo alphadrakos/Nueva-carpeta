@@ -487,9 +487,9 @@
         console.log(carácter);
       }*/
 
-      //manejo de errores
+      //manejo  y personalizar errores
 
-      try {
+      /* try {
         console.log("En el Try se agrega el código a evaluar");
         noExiste;
         console.log("segundo mensaje");
@@ -500,9 +500,65 @@
         console.log(error);
       } finally {
         console.log(
-          "El bloque Finally seejecutara siempre al final de un bloque try-catch"
+          "El bloque Finally se ejecutara siempre al final de un bloque try-catch"
         );
       }
+
+      try {
+        let numero = "Y";
+        if (isNaN(numero)) {
+          throw new Error("El carácter introducido no es un Número");
+        }
+        console.log(numero * numero);
+      } catch (error) {
+        console.log(`Se produjo el siguiente error: ${error}`);
+      }*/
+
+      // Prototipos
+
+      /* Clases Modelo a seguir
+      Objetos Es ena instancia de una clase
+       Atributos Es una característica o propiedad del objeto (son variables dentro de un objeto)
+       Metodos Son las acciones que un objeto puede realizar (son funciones dentro de un objeto)
+      */
+
+      /* const animal = {
+        nombre: "Snoopy",
+        sonar() {
+          console.log("Hago sonidos por que estoy vivo");
+        },
+      };
+      console.log(animal);
+
+      const animal2 = {
+        nombre: "Lola Bunny",
+        sonar() {
+          console.log("Hago sonidos por que estoy vivo");
+        },
+      };
+      console.log(animal2);*/
+
+      //función constructora  UpperCamelCase
+
+      // Funcion constructora
+      function Animal(nombre, genero) {
+        // Atributos
+        this.nombre = nombre;
+        this.genero = genero;
+        // Metodos
+        this.sonar = function () {
+          console.log("Hago sonidos por que estoy vivo");
+        };
+        this.saludar = function () {
+          console.log(`Hola me llamo ${this.nombre}`);
+        };
+      }
+
+      const snoopy = new Animal("Snoopy", "Macho");
+      lolaBonny = new Animal("Lola Bonny", "Hembra");
+
+      console.log(snoopy);
+      console.log(lolaBonny);
 
       /*const contarCaracteres = (cadena = "") =>
               !cadena

@@ -451,23 +451,41 @@
         console.log("for" + i);
       }*/
 
-      let números = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+      //let números = [10, 20, 30, 40, 50, 60, 70, 80, 90];
 
-      for (let i = 0; i < números.length; i++) {
+      /*for (let i = 0; i < números.length; i++) {
         console.log(números[i]);
-      }
+      }*/
+
+      //el for in es para recorrer propiedades de un objeto primitivo
 
       /*const adrian = {
-              nombre: "Adrían",
-              apellido: "Vazquez",
-              edad: 50,
-              pasatiempos: ["Ajedrez", "dar clases", "wu-shu"],
-              casado: true,
-              contacto: {
-                email: "adrianvazquezru@gmail.com",
-                twitter: "@adrian",
-                movil: "5615467779",
-              },*/
+        nombre: "Adrían",
+        apellido: "Vazquez",
+        edad: 50,
+        pasatiempos: ["Ajedrez", "dar clases", "wu-shu"],
+        casado: true,
+        contacto: {
+          email: "adrianvazquezru@gmail.com",
+          twitter: "@adrian",
+          movil: "5615467779",
+        },
+      };
+
+      for (const propiedad in adrian) {
+        console.log(`Key ${propiedad}, Value: ${adrian[propiedad]}`);
+      }
+
+      //for of espara todo objeto que pueda ser iterable
+      for (const elemento of números) {
+        console.log(elemento);
+      }
+
+      let cadena = "Hola Mundo";
+
+      for (const carácter of cadena) {
+        console.log(carácter);
+      }*/
 
       /*const contarCaracteres = (cadena = "") =>
               !cadena

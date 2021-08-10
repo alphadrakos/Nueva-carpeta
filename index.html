@@ -489,6 +489,21 @@
 
       //manejo de errores
 
+      try {
+        console.log("En el Try se agrega el código a evaluar");
+        noExiste;
+        console.log("segundo mensaje");
+      } catch (error) {
+        console.log(
+          "Catch, captura cualquier error surgido a lanzado en el Try"
+        );
+        console.log(error);
+      } finally {
+        console.log(
+          "El bloque Finally seejecutara siempre al final de un bloque try-catch"
+        );
+      }
+
       /*const contarCaracteres = (cadena = "") =>
               !cadena
                 ? console.warn("No ingresaste ninguna cadena")

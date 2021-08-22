@@ -196,17 +196,22 @@
       2.- Utilizando exclusivamente los dos valores boleanos del array,determinar los operadores necesarios para obtener un resultado true y otro resultado false
       3.- Determinar el resultado de las cinco operaciones matemáticas realizadascon los dos elementos numéricos.*/
 
-      /*const valores = [true, 5, false, "hola", "adios", 2];
-      let resultado = valores[3] > valores[4];
-      alert(resultado);
+      const valores = [true, 5, false, "hola", "adios", 2];
+      //cual de los 2 elementos de texto es mayor
+      /*let resultado = valores[3] > valores[4];
+      //alert(resultado);
+      //Combinar valores boleanos
       let valor1 = valores[0];
       let valor2 = valores[2];
       alert(valor1);
       alert(valor2);
-      let resultado = valor1 || valor2;
-      alert(resultado);
-      resultado = valor1 && valor2;
-      alert(resultado);*/
+      //Obtener resultado true
+      let resultados = valor1 || valor2;
+      alert(resultados);
+      //Obtener resultado false
+      resultados = valor1 && valor2;
+      alert(resultados);*/
+      //Operaciones matemáticas
       /*let num1 = valores[1];
       let num2 = valores[5];
 
@@ -479,48 +484,71 @@
             console.log(eresMayor);*/
 
       //ejercicio
+      /*El calculo de la letra DNI es un proceso matemático sencillo que se basa en obtener el resto de la division (modulo) entera del DNI y el número 23. A partir del resto de la división, se obtiene la letra seleccionándola dentro de un array de letras.
 
-      /*let letras = [
-                    "T",
-                    "R",
-                    "W",
-                    "A",
-                    "G",
-                    "M",
-                    "Y",
-                    "F",
-                    "P",
-                    "D",
-                    "X",
-                    "B",
-                    "N",
-                    "J",
-                    "Z",
-                    "S",
-                    "Q",
-                    "V",
-                    "H",
-                    "L",
-                    "C",
-                    "K",
-                    "E",
-                    "T",
-                  ];
+      let letras = [
+        "T",
+        "R",
+        "W",
+        "A",
+        "G",
+        "M",
+        "Y",
+        "F",
+        "P",
+        "D",
+        "X",
+        "B",
+        "N",
+        "J",
+        "Z",
+        "S",
+        "Q",
+        "V",
+        "H",
+        "L",
+        "C",
+        "K",
+        "E",
+        "T",
+      ];*/
 
-          let num = prompt("Introduce el número DNI (sin la letra)");
-          let letra = prompt("Introduce tu letra DNI (en mayúsculas)");
-          letra = letra.toUpperCase();
+      /*Almacene una variable para el número DNI y otra variable para la letra DNI  */
 
-          if (num < 0 || num > 99999999) {
-            alert("El número proporcionado no es valido");
-          } else {
-          let letraCalculada = letras[num % 23];
-          if (letraCalculada != letra) {
-            alert("La letra o el número proporcionado no son correctos");
-          } else {
-            alert("El numero de DNI y su letra son correctos");
-          }
-          }*/
+      //Comprobar si el número es menor que 0 o mayor que 99999999. Si ese el caso se mostrara un mensaje que el número proporcionado no es valido
+
+      //Si el número es valido se calcula la letra correspondiente
+
+      /*Una vez calculada la letra, se comparara con la letra indicada por el usuario, en caso de no coincidir se muestra mensaje informando esto en caso contrario seanuncia que si coincida*/
+
+      /*let num = prompt("Introduce el número DNI (sin la letra)");
+      let letra = prompt("Introduce tu letra DNI (en mayúsculas)");
+      letra = letra.toUpperCase();
+      if (num < 0 || num > 99999999) {
+        alert("El número proporcionado no es valido");
+      } else {
+        let letraCalculada = letras[num % 23];
+        if (letraCalculada != letra) {
+          alert("La letra o el número proporcionado no son correctos");
+        } else {
+          alert("El numero de DNI y su letra son correctos");
+        }
+      }*/
+
+      //Ejercicio
+
+      /*Escribir una funcion a la que se le pase como parametro un numero entero y devuelve como cadana de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función*/
+
+      /*let num = prompt("Introduce un número entero");
+      if (num % 2 == 0) {
+        alert("El número es par");
+      } else {
+        alert("El número es impar");
+      }*/
+
+      /*Definir una funcion que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la funcion determina si esa cadena está formada sólo por mayúsculas, solo por minúsculas o por una mezcla de ambas.
+
+      
 
       //switch-case
 

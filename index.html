@@ -546,9 +546,25 @@
         alert("El número es impar");
       }*/
 
-      /*Definir una funcion que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la funcion determina si esa cadena está formada sólo por mayúsculas, solo por minúsculas o por una mezcla de ambas.
+      /*Definir una funcion que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la funcion determina si esa cadena está formada sólo por mayúsculas, solo por minúsculas o por una mezcla de ambas.*/
 
-      
+      /*function info(cadena) {
+        let resultado = "La cadena \ " + cadena + " \ ";
+        //Otra forma de concatenar
+        //Comprobar mayúsculas y minúsculas
+        if (cadena == cadena.toUpperCase()) {
+          resultado += "Está formada solo por mayúsculas";
+        } else if (cadena == cadena.toLowerCase()) {
+          resultado += "Está formado solo por minúsculas";
+        } else {
+          resultado += "Está formada por mayúsculas y minúsculas";
+        }
+        return resultado;
+      }
+
+      alert(info("OVNI = OBJETO VOLADOR NO IDENTIFICADO"));
+      alert(info("En un lugar de la mancha"));
+      alert(info("solo somos polvo de estrellas"));*/
 
       //switch-case
 
@@ -735,6 +751,45 @@
           for (const carácter of cadena) {
             console.log(carácter);
           }*/
+
+      /*Definir una funcion que determine si la cadena de texto que se le pasa como parametro es un palindrome, es decir, si se lee de la misma forma desde la izquierda y desde la derecha.
+      ejemplo de palindrome complejo: "La ruta nos aporto otro paso natural". */
+
+      function palindrome(cadena) {
+        let resultado = "La cadena \ " + cadena + " \ ";
+        //pasar a minúsculas la cadena
+        let cadenaOriginal = cadena.toLowerCase();
+
+        //convertir la cadena en un array
+        let letrasEspacios = cadenaOriginal.split("");
+
+        //eliminar los espacios en blanco
+        let cadenaSinEspacios = "";
+        for (const i in letrasEspacios) {
+          if (letrasEspacios[i] != "") {
+            cadenaSinEspacios += letrasEspacios[i];
+          }
+        }
+        let letras = cadenaSinEspacios.split("");
+        let letrasRevés = cadenaSinEspacios.split("").reverse();
+        //este paso es muy largo
+        let iguales = true;
+        for (i in letras) {
+          if (letras[i] == letrasRevés[i]) {
+            //todo bien
+            iguales = true;
+          } else {
+            //alguna letra es distinta, por lo que ya no es un palindrome
+            iguales = false;
+          }
+        }
+        if (iguales) {
+          resultado += "Es un palindrome";
+        } else {
+          resultado += "No es un palindrome";
+        }
+        return resultado;
+      }
 
       //manejo  y personalizar errores
 

@@ -752,10 +752,10 @@
             console.log(carácter);
           }*/
 
-      /*Definir una funcion que determine si la cadena de texto que se le pasa como parametro es un palindrome, es decir, si se lee de la misma forma desde la izquierda y desde la derecha.
-      ejemplo de palindrome complejo: "La ruta nos aporto otro paso natural". */
+      /*Definir una funcion que determine si la cadena de texto que se le pasa como parametro es un palindromo, es decir, si se lee de la misma forma desde la izquierda y desde la derecha.
+      ejemplo de palindromo complejo: "La ruta nos aporto otro paso natural". */
 
-      function palindrome(cadena) {
+      /*function palindromo(cadena) {
         let resultado = "La cadena \ " + cadena + " \ ";
         //pasar a minúsculas la cadena
         let cadenaOriginal = cadena.toLowerCase();
@@ -765,31 +765,39 @@
 
         //eliminar los espacios en blanco
         let cadenaSinEspacios = "";
+
         for (const i in letrasEspacios) {
           if (letrasEspacios[i] != "") {
             cadenaSinEspacios += letrasEspacios[i];
           }
         }
+//con este ciclo conseguimos que el array no tenga espacios.
         let letras = cadenaSinEspacios.split("");
         let letrasRevés = cadenaSinEspacios.split("").reverse();
         //este paso es muy largo
+//al usar reverse() invertimos el sentido de lectura de cadenaSinEspacios
         let iguales = true;
+//en el ciclo siguiente iteramos la variable letras
         for (i in letras) {
           if (letras[i] == letrasRevés[i]) {
             //todo bien
             iguales = true;
           } else {
-            //alguna letra es distinta, por lo que ya no es un palindrome
+            //alguna letra es distinta, por lo que ya no es un palindromo
             iguales = false;
           }
         }
         if (iguales) {
-          resultado += "Es un palindrome";
+          resultado += "Es un palindromo";
         } else {
-          resultado += "No es un palindrome";
+          resultado += "No es un palindromo";
         }
         return resultado;
       }
+//se invoca palindromo por que es el nombre de la funcion y resultado esta declarada dentro de esta
+      alert(palindromo("La ruta nos aporto otro paso natural"));
+      alert(palindromo("Esta frase no se parece a ningún palindromo"));
+      alert(palindromo("OSO")); */
 
       //manejo  y personalizar errores
 
